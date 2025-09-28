@@ -1,3 +1,3 @@
 # Student Registration Form
 
-This is a practice project for mu form leaning.
+This is a practice project for my form leaning.
