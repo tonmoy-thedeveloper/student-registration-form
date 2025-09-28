@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Tanvir Hasan Tonmoy" />
+    <meta name="description" content="This is a practice project for form" />
+    <meta name="keywords" content="html, CSS, Form" />
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>student Registration form</h1>
+      </div>
+    </header>
+    <main class="container">
+      <div class="section-heading">
+        <h2 class="">please enter relevant information</h2>
+        <p>
+          <small>Mandatory Field <sup>*</sup></small>
+        </p>
+      </div>
+
+      <form>
+        <div class="left-side-form">
+          <!-- District Here -->
+          <div>
+            <label for="district">
+              District
+              <small
+                >(Institute District: Where you want to do your course)*</small
+              >
+              <div>
+                <select name="district" id="">
+                  <option value="select" disabled selected>
+                    -- select one --
+                  </option>
+                  <!-- Dhaka Division -->
+                  <option disabled>--- Dhaka Division ---</option>
+                  <option>Dhaka</option>
+                  <option>Faridpur</option>
+                  <option>Gazipur</option>
+                  <option>Gopalganj</option>
+                  <option>Kishoreganj</option>
+                  <option>Madaripur</option>
+                  <option>Manikganj</option>
+                  <option>Munshiganj</option>
+                  <option>Narayanganj</option>
+                  <option>Narsingdi</option>
+                  <option>Rajbari</option>
+                  <option>Shariatpur</option>
+                  <option>Tangail</option>
+
+                  <!-- Chattogram Division -->
+                  <option disabled>--- Chattogram Division ---</option>
+                  <option>Bandarban</option>
+                  <option>Brahmanbaria</option>
+                  <option>Chandpur</option>
+                  <option>Chattogram</option>
+                  <option>Cox’s Bazar</option>
+                  <option>Feni</option>
+                  <option>Khagrachhari</option>
+                  <option>Lakshmipur</option>
+                  <option>Noakhali</option>
+                  <option>Rangamati</option>
+
+                  <!-- Khulna Division -->
+                  <option disabled>--- Khulna Division ---</option>
+                  <option>Bagerhat</option>
+                  <option>Chuadanga</option>
+                  <option>Jashore</option>
+                  <option>Jhenaidah</option>
+                  <option>Khulna</option>
+                  <option>Kushtia</option>
+                  <option>Magura</option>
+                  <option>Meherpur</option>
+                  <option>Narail</option>
+                  <option>Satkhira</option>
+
+                  <!-- Rajshahi Division -->
+                  <option disabled>--- Rajshahi Division ---</option>
+                  <option>Bogra</option>
+                  <option>Joypurhat</option>
+                  <option>Naogaon</option>
+                  <option>Natore</option>
+                  <option>Chapai Nawabganj</option>
+                  <option>Pabna</option>
+                  <option>Rajshahi</option>
+                  <option>Sirajganj</option>
+
+                  <!-- Rangpur Division -->
+                  <option disabled>--- Rangpur Division ---</option>
+                  <option>Dinajpur</option>
+                  <option>Gaibandha</option>
+                  <option>Kurigram</option>
+                  <option>Lalmonirhat</option>
+                  <option>Nilphamari</option>
+                  <option>Panchagarh</option>
+                  <option>Rangpur</option>
+                  <option>Thakurgaon</option>
+
+                  <!-- Sylhet Division -->
+                  <option disabled>--- Sylhet Division ---</option>
+                  <option>Habiganj</option>
+                  <option>Moulvibazar</option>
+                  <option>Sunamganj</option>
+                  <option>Sylhet</option>
+
+                  <!-- Barishal Division -->
+                  <option disabled>--- Barishal Division ---</option>
+                  <option>Barguna</option>
+                  <option>Barishal</option>
+                  <option>Bhola</option>
+                  <option>Jhalokati</option>
+                  <option>Patuakhali</option>
+                  <option>Pirojpur</option>
+
+                  <!-- Mymensingh Division -->
+                  <option disabled>--- Mymensingh Division ---</option>
+                  <option>Jamalpur</option>
+                  <option>Mymensingh</option>
+                  <option>Netrokona</option>
+                  <option>Sherpur</option>
+                </select>
+              </div>
+            </label>
+          </div>
+
+          <!-- Course selection Here -->
+          <div>
+            <label for="course"> course* </label>
+            <select id="course" name="course">
+              <option disabled selected>--- Choose a Course ---</option>
+              <option>Web Development</option>
+              <option>Digital Marketing</option>
+              <option>Graphic Design</option>
+              <option>UI/UX Design</option>
+              <option>Data Science</option>
+              <option>Cyber Security</option>
+              <option>Mobile App Development</option>
+              <option>Cloud Computing</option>
+              <option>Artificial Intelligence</option>
+              <option>Content Writing</option>
+              <option>Video Editing</option>
+            </select>
+          </div>
+
+          <!-- Student Name -->
+          <div>
+            <label for="name"> student name* </label>
+            <input type="text" name="name" id="name" />
+          </div>
+
+          <!-- Father Name -->
+          <div>
+            <label for="father-name">father name*</label>
+            <input type="text" name="father-name" id="father-name" />
+          </div>
+          <!-- Mother Name -->
+          <div>
+            <label for="mother-name">mother name*</label>
+            <input type="text" name="mother-name" id="mother-name" />
+          </div>
+
+          <!-- Date of Birth -->
+          <fieldset>
+            <legend>Date of Birth*</legend>
+            <div class="dob">
+              <div>
+                <label for="day"> day </label>
+                <select name="day" id="day">
+                  <option value="day" disabled selected>Day</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                  <option>13</option>
+                  <option>14</option>
+                  <option>15</option>
+                  <option>16</option>
+                  <option>17</option>
+                  <option>18</option>
+                  <option>19</option>
+                  <option>20</option>
+                  <option>21</option>
+                  <option>22</option>
+                  <option>23</option>
+                  <option>24</option>
+                  <option>25</option>
+                  <option>26</option>
+                  <option>27</option>
+                  <option>28</option>
+                  <option>29</option>
+                  <option>30</option>
+                  <option>31</option>
+                </select>
+              </div>
+
+              <!-- Month -->
+              <div>
+                <label for="month">Month:</label>
+                <select id="month" name="month">
+                  <option disabled selected>Month</option>
+                  <option>January</option>
+                  <option>February</option>
+                  <option>March</option>
+                  <option>April</option>
+                  <option>May</option>
+                  <option>June</option>
+                  <option>July</option>
+                  <option>August</option>
+                  <option>September</option>
+                  <option>October</option>
+                  <option>November</option>
+                  <option>December</option>
+                </select>
+              </div>
+              <!-- Year  -->
+              <div>
+                <label for="year">Year:</label>
+                <select id="year" name="year">
+                  <option disabled selected>Year</option>
+                  <!-- 2025–1960 -->
+                  <option>2025</option>
+                  <option>2024</option>
+                  <option>2023</option>
+                  <option>2022</option>
+                  <option>2021</option>
+                  <option>2020</option>
+                  <option>2019</option>
+                  <option>2018</option>
+                  <option>2017</option>
+                  <option>2016</option>
+                  <option>2015</option>
+                  <option>2014</option>
+                  <option>2013</option>
+                  <option>2012</option>
+                  <option>2011</option>
+                  <option>2010</option>
+                  <option>2009</option>
+                  <option>2008</option>
+                  <option>2007</option>
+                  <option>2006</option>
+                  <option>2005</option>
+                  <option>2004</option>
+                  <option>2003</option>
+                  <option>2002</option>
+                  <option>2001</option>
+                  <option>2000</option>
+                  <option>1999</option>
+                  <option>1998</option>
+                  <option>1997</option>
+                  <option>1996</option>
+                  <option>1995</option>
+                  <option>1994</option>
+                  <option>1993</option>
+                  <option>1992</option>
+                  <option>1991</option>
+                  <option>1990</option>
+                  <option>1989</option>
+                  <option>1988</option>
+                  <option>1987</option>
+                  <option>1986</option>
+                  <option>1985</option>
+                  <option>1984</option>
+                  <option>1983</option>
+                  <option>1982</option>
+                  <option>1981</option>
+                  <option>1980</option>
+                  <option>1979</option>
+                  <option>1978</option>
+                  <option>1977</option>
+                  <option>1976</option>
+                  <option>1975</option>
+                  <option>1974</option>
+                  <option>1973</option>
+                  <option>1972</option>
+                  <option>1971</option>
+                  <option>1970</option>
+                  <option>1969</option>
+                  <option>1968</option>
+                  <option>1967</option>
+                  <option>1966</option>
+                  <option>1965</option>
+                  <option>1964</option>
+                  <option>1963</option>
+                  <option>1962</option>
+                  <option>1961</option>
+                  <option>1960</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- Select Gender -->
+          <div class="gender">
+            <label>Gender*</label>
+
+            <label for="female">female</label>
+            <input type="radio" name="gender" id="female" value="female" />
+
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male" />
+
+            <label for="others">others</label>
+            <input type="radio" name="gender" id="others" value="others" />
+
+            <label for="pnts">prefer not to say</label>
+            <input type="radio" name="gender" id="pnts" value="pnts" />
+          </div>
+
+          <!-- Physically Handicapped -->
+          <div class="handicapped">
+            <label for="handicapped">Physically Handicapped*</label>
+
+            <label for="yes">yes</label>
+            <input type="radio" name="handicapped" id="yes" />
+
+            <label for="no">no</label>
+            <input type="radio" name="handicapped" id="no" />
+          </div>
+
+          <!-- Email Input -->
+          <div class="email">
+            <label for="email">email*</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="e.g: example@gmail.com"
+            />
+          </div>
+
+          <!-- Phone Number -->
+          <div class="phone">
+            <label for="phone">phone number*</label>
+
+            <input
+              type="number"
+              name="phone"
+              id="phone"
+              placeholder="e.g:0155123456"
+            />
+          </div>
+        </div>
+
+        <div class="right-side-form">
+          <!-- Identification type -->
+          <div class="identify">
+            <label for="identify">identification type*</label>
+            <select name="" id="identify">
+              <option value="select" disabled selected>-- choose one --</option>
+              <option value="birth">birth certificate</option>
+              <option value="nid">National ID</option>
+            </select>
+          </div>
+
+          <!-- Identification Number -->
+          <div class="id-number">
+            <label for="id-number"
+              >Identification No. (Must be 10 digits for new NID or 17 digits
+              for old NID. If your National ID is 13 digits, then please add
+              your birth year with the ID as prefix. Example:
+              1980XXXXXXXXXXXXX)*
+            </label>
+            <input type="number" name="id-number" id="id-number" />
+          </div>
+
+          <!-- Home District -->
+          <div class="home-dis">
+            <label for="home-dis">home district*</label>
+            <select>
+              <option value="select" disabled selected>
+                -- select your district --
+              </option>
+              <!-- Dhaka Division -->
+              <option disabled>--- Dhaka Division ---</option>
+              <option>Dhaka</option>
+              <option>Faridpur</option>
+              <option>Gazipur</option>
+              <option>Gopalganj</option>
+              <option>Kishoreganj</option>
+              <option>Madaripur</option>
+              <option>Manikganj</option>
+              <option>Munshiganj</option>
+              <option>Narayanganj</option>
+              <option>Narsingdi</option>
+              <option>Rajbari</option>
+              <option>Shariatpur</option>
+              <option>Tangail</option>
+
+              <!-- Chattogram Division -->
+              <option disabled>--- Chattogram Division ---</option>
+              <option>Bandarban</option>
+              <option>Brahmanbaria</option>
+              <option>Chandpur</option>
+              <option>Chattogram</option>
+              <option>Cox’s Bazar</option>
+              <option>Feni</option>
+              <option>Khagrachhari</option>
+              <option>Lakshmipur</option>
+              <option>Noakhali</option>
+              <option>Rangamati</option>
+
+              <!-- Khulna Division -->
+              <option disabled>--- Khulna Division ---</option>
+              <option>Bagerhat</option>
+              <option>Chuadanga</option>
+              <option>Jashore</option>
+              <option>Jhenaidah</option>
+              <option>Khulna</option>
+              <option>Kushtia</option>
+              <option>Magura</option>
+              <option>Meherpur</option>
+              <option>Narail</option>
+              <option>Satkhira</option>
+
+              <!-- Rajshahi Division -->
+              <option disabled>--- Rajshahi Division ---</option>
+              <option>Bogra</option>
+              <option>Joypurhat</option>
+              <option>Naogaon</option>
+              <option>Natore</option>
+              <option>Chapai Nawabganj</option>
+              <option>Pabna</option>
+              <option>Rajshahi</option>
+              <option>Sirajganj</option>
+
+              <!-- Rangpur Division -->
+              <option disabled>--- Rangpur Division ---</option>
+              <option>Dinajpur</option>
+              <option>Gaibandha</option>
+              <option>Kurigram</option>
+              <option>Lalmonirhat</option>
+              <option>Nilphamari</option>
+              <option>Panchagarh</option>
+              <option>Rangpur</option>
+              <option>Thakurgaon</option>
+
+              <!-- Sylhet Division -->
+              <option disabled>--- Sylhet Division ---</option>
+              <option>Habiganj</option>
+              <option>Moulvibazar</option>
+              <option>Sunamganj</option>
+              <option>Sylhet</option>
+
+              <!-- Barishal Division -->
+              <option disabled>--- Barishal Division ---</option>
+              <option>Barguna</option>
+              <option>Barishal</option>
+              <option>Bhola</option>
+              <option>Jhalokati</option>
+              <option>Patuakhali</option>
+              <option>Pirojpur</option>
+
+              <!-- Mymensingh Division -->
+              <option disabled>--- Mymensingh Division ---</option>
+              <option>Jamalpur</option>
+              <option>Mymensingh</option>
+              <option>Netrokona</option>
+              <option>Sherpur</option>
+            </select>
+          </div>
+
+          <!-- Upazila -->
+          <div class="upazila">
+            <label for="upazila">upazila*</label>
+            <select name="upazila" id="upazila">
+              <option value="select" disabled selected>
+                -- select your upazila
+              </option>
+              <option>Trishal</option>
+              <option>Dhobaura</option>
+              <option>Fulbaria</option>
+              <option>Gaffargaon</option>
+              <option>Gauripur</option>
+              <option>Haluaghat</option>
+              <option>Ishwarganj</option>
+              <option>Mymensingh Sadar</option>
+              <option>Nandail</option>
+              <option>Phulpur</option>
+              <option>Tarakanda</option>
+              <option>Bhaluka</option>
+              <option>Muktagachha</option>
+              <option>Pagla</option>
+            </select>
+          </div>
+
+          <!-- Villege -->
+          <div class="villege">
+            <label for="villege"
+              >Village/House No./Road No./Other Alternative*</label
+            >
+            <input type="text" name="villege" id="villege" />
+          </div>
+          <!-- Post Office -->
+          <div class="post">
+            <label for="post">Post Office*</label>
+            <input type="text" name="post" id="post" />
+          </div>
+
+          <!-- Education -->
+          <div class="edu">
+            <label for="edu">Educational Qualification*</label>
+            <select name="edu" id="edu">
+              <option value="select" disabled selected>
+                -- select your Educational Qualification --
+              </option>
+              <option value="higher">higher secondery / equivalent</option>
+              <option value="bachelor">bachelor</option>
+              <option value="master">masters</option>
+              <option value="phd">PhD</option>
+            </select>
+          </div>
+
+          <!-- Computer -->
+          <div class="computer">
+            <label for="computer">have any computer?*</label>
+
+            <label for="yes">yes</label>
+            <input type="radio" name="computer" id="yes" />
+
+            <label for="no">no</label>
+            <input type="radio" name="computer" id="no" />
+          </div>
+
+          <!-- Photograph -->
+          <div class="photograph">
+            <label for="photograph">photgraph*</label>
+            <input
+              type="file"
+              name="photograph"
+              id="photgraph"
+              accept=".jpg, .jpeg, .png"
+            />
+          </div>
+          <!-- Signature -->
+          <div class="sign">
+            <label for="sign">signature*</label>
+            <input
+              type="file"
+              name="sign"
+              id="sign"
+              accept=".jpg, .jpeg, .png"
+            />
+          </div>
+          <input class="submit" type="submit" value="submit" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
